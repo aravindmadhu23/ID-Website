@@ -24,7 +24,7 @@ const seed = async () => {
                 INSERT INTO Users (Name, Email, PasswordHash, RoleId, DepartmentId)
                 VALUES (@name, @email, @pass, @roleId, @deptId)
             `);
-
+        /* Comment */
         // QA User (Dept ID 6)
         await pool.request()
             .input('name', sql.NVarChar, 'QA Specialist')
